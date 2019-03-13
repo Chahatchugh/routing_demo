@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Routing and Navigation
+  </h1>
+</div>
+<nav class="design">
+  <button class="design">
+  <a routerLink="departments/:list" routerLinkActive="active"> <!--Router link directive Help in navigation using routing module-->
+    Departments
+  </a>
+  </button>
+  <button class="design" >
+  <a routerLink="/employees" routerLinkActive="active"> <!--RouterLink active used for adding more type of css-->
+    Employees
+  </a> <!--we don't use href coz angular page reloads and take few second-->
+  </button>
+</nav>
+<router-outlet></router-outlet> <!--Here we are specifying wher the components has to be displayed ; Directive  available from router package -->
+<!--as angular see it is going to render component associated to current route after outlet-->
+<!--app home component is not in router outlet-->
